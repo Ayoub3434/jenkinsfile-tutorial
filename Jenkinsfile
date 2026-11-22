@@ -35,7 +35,7 @@ pipeline{
         echo 'deploying the application...'
         withCredentials([
           usernamePassword(credentials: 'server-credentials', usernameVariable: USER, passwordVariable: PWD)
-        ]}
+        ])
         sh "some script ${USER} ${PWD}"
         echo "deploying version ${VERSION}"
       }
