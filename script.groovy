@@ -1,5 +1,14 @@
-def function(){
-  echo 'building the application...'
+def buildApp(){
+  echo 'buliding the application...'
+  echo "building version ${NEW_VERSION}"
+}
+
+def testApp(){
+  echo 'testing the application...'
+}
+
+def deployApp(){
+  echo 'deploying the application...'
 }
 
 return this
