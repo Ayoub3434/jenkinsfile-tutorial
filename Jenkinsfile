@@ -32,17 +32,12 @@ pipeline{
         }
       }
       steps{
-        echo 'testing the application...'
-
         gv.testApp()
       }
     }
 
     stage("deploy"){
       steps{
-        echo 'deploying the application...'
-        echo "deploying version ${params.VERSION}"
-
         gv.deployApp()
       }
     }
